@@ -13,7 +13,7 @@ $ npm install --save titleize
 ## Usage
 
 ```js
-const titleize = require('titleize');
+const titleize = require('@reflect/titleize');
 
 titleize('foo bar');
 //=> 'Foo Bar'
@@ -25,4 +25,4 @@ titleize('foo bar');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com), [Brad Heller](https://reflect.io)
