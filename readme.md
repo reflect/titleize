@@ -18,7 +18,7 @@ const titleize = require('@reflect/titleize');
 titleize('foo bar');
 //=> 'Foo Bar'
 
-titleize('foo bar');
+titleize('foo-bar');
 //=> 'Foo Bar'
 ```
 
