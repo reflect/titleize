@@ -1,6 +1,6 @@
 {
   "name": "@reflect/titleize",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Capitalize every word in a string: unicorn cake → Unicorn Cake",
   "license": "MIT",
   "repository": "reflect/titleize",
