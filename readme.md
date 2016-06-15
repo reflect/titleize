@@ -18,8 +18,8 @@ const titleize = require('titleize');
 titleize('foo bar');
 //=> 'Foo Bar'
 
-titleize('foo-bar');
-//=> 'Foo-Bar'
+titleize('foo bar');
+//=> 'Foo Bar'
 ```
 
 
