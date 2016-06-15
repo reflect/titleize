@@ -1,10 +1,16 @@
 'use strict';
 module.exports = function (str) {
-	if (typeof str !== 'string') {
-		throw new TypeError('Expected a string');
-	}
+  if (typeof str !== 'string') {
+    throw new TypeError('expected a string');
+  }
 
-	return str.toLowerCase().replace(/(?:^|\s|-)\S/g, function (m) {
-		return m.toUpperCase();
-	});
+  var cb = function(m) {
+    return m.toUpperCase();
+  };
+
+  // Remove any separators and turn them in to spaces.
+  return str.replace(/(-|_)/g, ' ').
+    replace(/\s+/g, ' ').
+    toLowerCase().
+    replace(/(?:^|\s|-|_)\S/g, cb);
 };
