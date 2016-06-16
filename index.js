@@ -12,5 +12,5 @@ module.exports = function (str) {
   return str.replace(/(-|_)/g, ' ').
     replace(/\s+/g, ' ').
     toLowerCase().
-    replace(/(?:^|\s|-|_)\S/g, cb);
+    replace(/(?:^|\s|-|_|\()\w/g, cb);
 };
